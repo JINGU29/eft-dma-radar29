@@ -1,4 +1,4 @@
-﻿global using static eft_dma_radar.Tarkov.MemoryInterface;
+global using static eft_dma_radar.Tarkov.MemoryInterface;
 
 using System;
 using System.Collections.Generic;
@@ -177,7 +177,7 @@ namespace eft_dma_radar.Tarkov
                 {
                     Log.Write(AppLogLevel.Error, $"FATAL ERROR on Memory Thread: {ex}");
                     if (MainWindow.Window != null)
-                        NotificationsShared.Warning("FATAL ERROR on Memory Thread");
+                        NotificationsShared.Warning("内存线程发生致命错误");
                     OnGameStopped();
                     Thread.Sleep(1000);
                 }
@@ -234,7 +234,7 @@ namespace eft_dma_radar.Tarkov
 
                     Log.WriteLine("Game Startup [OK]");
                     if (MainWindow.Window != null)
-                        NotificationsShared.Info("Game Startup [OK]");
+                        NotificationsShared.Info("游戏启动成功 [OK]");
                     return;
                 }
                 catch (Exception ex)
@@ -315,7 +315,7 @@ namespace eft_dma_radar.Tarkov
                             {
                                 Log.WriteLine("Restarting Radar per User Request.");
                                 if (MainWindow.Window != null)
-                                    NotificationsShared.Info("Restarting Radar per User Request.");
+                                    NotificationsShared.Info("根据用户请求重启雷达。");
 
                                 _restartRadar = false;
 
@@ -347,7 +347,7 @@ namespace eft_dma_radar.Tarkov
                 {
                     Log.WriteLine($"CRITICAL ERROR in Game Loop: {ex}");
                     if (MainWindow.Window != null)
-                        NotificationsShared.Warning("CRITICAL ERROR in Game Loop");
+                        NotificationsShared.Warning("游戏循环发生严重错误");
                     break;
                 }
                 finally

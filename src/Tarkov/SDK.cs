@@ -38,43 +38,44 @@ namespace SDK
             public static uint GameDateTime = 0xD8;
             public static uint SynchronizableObjectLogicProcessor = 0x248; //_SynchronizableObjectLogicProcessor_k__BackingField
         }
-        //public static class GameWorld
+        //public static class ClientLocalGameWorld
         public readonly partial struct ClientLocalGameWorld
         {
-            public static uint BtrController = 0x28; //_BtrController_k__BackingField
-            public static uint TransitController = 0x38; //_TransitController_k__BackingField
-            public static uint ExfilController = 0x58; //_ExfiltrationController_k__BackingField
-            public static uint ClientShellingController = 0xA8; //_ClientShellingController_k__BackingField
-            public static uint LocationId = 0xD0; //_LocationId_k__BackingField
-            public static uint LootList = 0x198;
-            public static uint RegisteredPlayers = 0x1B8;
-            public static uint BorderZones = 0x1F0;
-            public static uint MainPlayer = 0x210;
-            public static uint World = 0x218; //_world
-            public static uint SynchronizableObjectLogicProcessor = 0x248; //_SynchronizableObjectLogicProcessor_k__BackingField
-            public static uint Grenades = 0x288;
+            public static uint BtrController = 0x28; //_BtrController_k__BackingField // [UPDATED json]
+            public static uint TransitController = 0x38; //_TransitController_k__BackingField // [UPDATED json]
+            public static uint ExfilController = 0x68; //_ExfiltrationController_k__BackingField // [UPDATED json]
+            public static uint ClientShellingController = 0xC0; //_ClientShellingController_k__BackingField // [UPDATED json]
+            public static uint LocationId = 0xE8; //_LocationId_k__BackingField // [UPDATED json]
+            public static uint LootList = 0x1B0; // // [UPDATED json]
+            public static uint RegisteredPlayers = 0x1D0; // // [UPDATED json]
+            public static uint BorderZones = 0x210; // // [UPDATED json]
+            public static uint MainPlayer = 0x230; // // [UPDATED json]
+            public static uint World = 0x238; //_world // [UPDATED json]
+            public static uint SynchronizableObjectLogicProcessor = 0x270; //_SynchronizableObjectLogicProcessor_k__BackingField // [UPDATED json]
+            public static uint Grenades = 0x2B0; // // [UPDATED json]
+            public static uint _startMissionController = 0x328; // // [UPDATED json]
         }
         //public static class TransitController
         public readonly partial struct TransitController
         {
-            public static uint TransitPoints = 0x18; //pointsById
+            public static uint TransitPoints = 0x20; //pointsById // [UPDATED json]
         }
         //public static class ArtilleryShellingControllerClient
         public readonly partial struct ClientShellingController
         {
-            public static uint ActiveClientProjectiles = 0x68;
+            public static uint ActiveClientProjectiles = 0x68; // // [UPDATED json]
         }
         //public static class World_2
         public readonly partial struct WorldController
         {
-            public static uint Interactables = 0x30; //_interactables
+            public static uint Interactables = 0x28; //_interactables // [UPDATED json]
         }
         //public static class WorldInteractiveObject
         public readonly partial struct Interactable
         {
-            public static uint KeyId = 0x60;
-            public static uint Id = 0x70;
-            public static uint _doorState = 0xD0;
+            public static uint KeyId = 0x60; // // [UPDATED json]
+            public static uint Id = 0x70; // // [UPDATED json]
+            public static uint _doorState = 0xD0; // // [UPDATED json]
         }
         //public static class ArtilleryProjectileClient
         public readonly partial struct ArtilleryProjectileClient
@@ -118,46 +119,57 @@ namespace SDK
         //public static class BtrController
         public readonly partial struct BtrController
         {
-            public static uint BtrView = 0x50; //_BtrView_k__BackingField
+            public static uint BtrView = 0x50; //_BtrView_k__BackingField // // [UPDATED json]
         }
         //public static class BTRView
         public readonly partial struct BTRView
         {
-            public static uint turret = 0x60;
-            public static uint _previousPosition = 0xB4; //_previousPosition
+            public static uint turret = 0x60; // // [UPDATED json]
+            public static uint _previousPosition = 0xB4; //_previousPosition // // [UPDATED json]
         }
         //public static class BTRTurretView
         public readonly partial struct BTRTurretView
         {
-            public static uint AttachedBot = 0x60; //_bot
+            public static uint AttachedBot = 0x60; //_bot // // [UPDATED json]
         }
         //public static class EffectsController
         public readonly partial struct EffectsController
         {
-            public static uint _effectsPrefab = 0x20;
-            public static uint FastVineteFlicker = 0x28;
-            public static uint RainScreenDrops = 0x30; //_RainScreenDrops_k__BackingField
-            public static uint ScreenWater = 0x38; //_ScreenWater_k__BackingField
-            public static uint _vignette = 0x40;
-            public static uint _doubleVision = 0x48;
-            public static uint _hueFocus = 0x50;
-            public static uint _radialBlur = 0x58;
-            public static uint _sharpen = 0x60;
-            public static uint _lowhHealthBlend = 0x68;
-            public static uint _bloodlossBlend = 0x70;
-            public static uint _wiggle = 0x78;
-            public static uint _motionBluer = 0x80;
-            public static uint _bloodOnScreen = 0x88;
-            public static uint _grenadeFlash = 0x90;
-            public static uint _eyeBurn = 0x98;
-            public static uint _blur = 0xA0;
-            public static uint _dof = 0xA8;
-            public static uint _effectAccumulators = 0xB0;
-            public static uint _sharpenAccumulator = 0xB8;
-            public static uint _radialBlurAccumulator = 0xC0;
-            public static uint _chromaticAberration = 0xC8;
-            public static uint _thermalVision = 0xD0;
-            public static uint _frostbiteEffect = 0xD8;
+            public static uint _effectsPrefab = 0x20; // // [UPDATED json]
+            public static uint FastVineteFlicker = 0x28; // // [UPDATED json]
+            public static uint RainScreenDrops = 0x30; //_RainScreenDrops_k__BackingField // [UPDATED json]
+            public static uint ScreenWater = 0x38; //_ScreenWater_k__BackingField // [UPDATED json]
+            public static uint _vignette = 0x40; // // [UPDATED json]
+            public static uint _doubleVision = 0x48; // // [UPDATED json]
+            public static uint _hueFocus = 0x50; // // [UPDATED json]
+            public static uint _radialBlur = 0x58; // // [UPDATED json]
+            public static uint _sharpen = 0x60; // // [UPDATED json]
+            public static uint _lowhHealthBlend = 0x68; // // [UPDATED json]
+            public static uint _bloodlossBlend = 0x70; // // [UPDATED json]
+            public static uint _wiggle = 0x78; // // [UPDATED json]
+            public static uint _motionBluer = 0x80; // // [UPDATED json]
+            public static uint _bloodOnScreen = 0x88; // // [UPDATED json]
+            public static uint _grenadeFlash = 0x90; // // [UPDATED json]
+            public static uint _eyeBurn = 0x98; // // [UPDATED json]
+            public static uint _blur = 0xA0; // // [UPDATED json]
+            public static uint _dof = 0xA8; // // [UPDATED json]
+            public static uint _effectAccumulators = 0xB0; // // [UPDATED json]
+            public static uint _sharpenAccumulator = 0xB8; // // [UPDATED json]
+            public static uint _radialBlurAccumulator = 0xC0; // // [UPDATED json]
+            public static uint _chromaticAberration = 0xC8; // // [UPDATED json]
+            public static uint _thermalVision = 0xD0; // // [UPDATED json]
+            public static uint _frostbiteEffect = 0xD8; // // [UPDATED json]
+            public static uint _tearsEffect = 0xE0; // // [UPDATED json]
+            public static uint _maxRedScreen = 0xEC; // // [UPDATED json]
+            public static uint _maxDoubleScreen = 0xF0; // // [UPDATED json]
+            public static uint _maxVinieteDarkness = 0xF4; // // [UPDATED json]
+            public static uint _maxWiggleScale = 0xF8; // // [UPDATED json]
+            public static uint _maxMotionBlur = 0xFC; // // [UPDATED json]
+            public static uint _maxSharpen = 0x100; // // [UPDATED json]
+            public static uint _deathFade = 0x108; // // [UPDATED json]
+            public static uint player = 0x110; // // [UPDATED json]
+            public static uint _sharpenBinding = 0x118; // // [UPDATED json]
+            public static uint _unsubscribeOnDestroy = 0x120; // // [UPDATED json]
         }
         //public static class FrostbiteEffect
         public readonly partial struct FrostbiteEffect
@@ -192,72 +204,72 @@ namespace SDK
         //public static class ExfiltrationController
         public readonly partial struct ExfilController
         {
-            public static uint ExfiltrationPointArray = 0x20; //_ExfiltrationPoints_k__BackingField
-            public static uint ScavExfiltrationPointArray = 0x28; //_ScavExfiltrationPoints_k__BackingField
-            public static uint SecretExfiltrationPointArray = 0x30; //_SecretExfiltrationPoints_k__BackingField
+            public static uint ExfiltrationPointArray = 0x20; //_ExfiltrationPoints_k__BackingField // [UPDATED json]
+            public static uint ScavExfiltrationPointArray = 0x28; //_ScavExfiltrationPoints_k__BackingField // [UPDATED json]
+            public static uint SecretExfiltrationPointArray = 0x30; //_SecretExfiltrationPoints_k__BackingField // [UPDATED json]
         }
         //public static class ExfiltrationPoint
         public readonly partial struct Exfil
         {
-            public static uint _status = 0x58;
-            public static uint Settings = 0x98;
-            public static uint EligibleEntryPoints = 0xC0;
+            public static uint _status = 0x58; // // [UPDATED json]
+            public static uint Settings = 0x98; // // [UPDATED json]
+            public static uint EligibleEntryPoints = 0xC0; // // [UPDATED json]
         }
         //public static class ScavExfiltrationPoint
         public readonly partial struct ScavExfil
         {
-            public static uint EligibleIds = 0xF8;
+            public static uint EligibleIds = 0xF8; // // [UPDATED json]
         }
         //public static class ExitTriggerSettings
         public readonly partial struct ExfilSettings
         {
-            public static uint Name = 0x18;
+            public static uint Name = 0x18; // // [UPDATED json]
         }
         //public static class Grenade + public static class Throwable
         public readonly partial struct Grenade
         {
-            public static uint IsDestroyed = 0x4D; //_isDestroyed from Throwable
-            public static uint WeaponSource = 0x98; //_WeaponSource_k__BackingField from Grenade
+            public static uint IsDestroyed = 0x4D; //_isDestroyed from Throwable // [UPDATED json]
+            public static uint WeaponSource = 0x98; //_WeaponSource_k__BackingField from Grenade // [UPDATED json]
         }
         //public static class Player
         public readonly partial struct Player
         {
             public static uint _characterController = 0x40;
-            public static uint MovementContext = 0x60; //_MovementContext_k__BackingField
-            public static uint _playerBody = 0x190;
-            public static uint ProceduralWeaponAnimation = 0x338; //_ProceduralWeaponAnimation_k__BackingField
-            public static uint _animators = 0x640;
-            public static uint EnabledAnimators = 0x670;
-            public static uint Corpse = 0x680;
-            public static uint Location = 0x870; //_Location_k__BackingField
-            public static uint InteractableObject = 0x888; //_InteractableObject_k__BackingField
-            public static uint Profile = 0x900; //_Profile_k__BackingField
-            public static uint Physical = 0x918;
-            public static uint AIData = 0x940; //_AIData_k__BackingField
-            public static uint _healthController = 0x960;
-            public static uint _inventoryController = 0x978;
-            public static uint _handsController = 0x980;
-            public static uint InteractionRayOriginOnStartOperation = 0xA1C; //_InteractionRayOriginOnStartOperation_k__BackingField
-            public static uint InteractionRayDirectionOnStartOperation = 0xA28; //_InteractionRayDirectionOnStartOperation_k__BackingField
-            public static uint IsYourPlayer = 0xA89; //_IsYourPlayer_k__BackingField
-            public static uint VoipID = 0x8F0; //_VoipID_k__BackingField
-            public static uint Id = 0x8F8;  //_PlayerId_k__BackingField
-            public static uint GameWorld = 0x5F8; //_GameWorld_k__BackingField
+            public static uint MovementContext = 0x60; //_MovementContext_k__BackingField // [UPDATED json]
+            public static uint _playerBody = 0x190; // [UPDATED json]
+            public static uint ProceduralWeaponAnimation = 0x3B0; //_ProceduralWeaponAnimation_k__BackingField // [UPDATED json]
+            public static uint _animators = 0x6D8; // [UPDATED json]
+            public static uint EnabledAnimators = 0x708; // [UPDATED json]
+            public static uint Corpse = 0x718; // [UPDATED json]
+            public static uint Location = 0x918; //_Location_k__BackingField // [UPDATED json]
+            public static uint InteractableObject = 0x930; //_InteractableObject_k__BackingField // [UPDATED json]
+            public static uint Profile = 0x9B0; //_Profile_k__BackingField // [UPDATED json]
+            public static uint Physical = 0x9C8; // [UPDATED json]
+            public static uint AIData = 0x9F0; //_AIData_k__BackingField // [UPDATED json]
+            public static uint _healthController = 0xA10; // [UPDATED json]
+            public static uint _inventoryController = 0xA28; // [UPDATED json]
+            public static uint _handsController = 0xA30; // [UPDATED json]
+            public static uint InteractionRayOriginOnStartOperation = 0xB08; //_InteractionRayOriginOnStartOperation_k__BackingField // [UPDATED json]
+            public static uint InteractionRayDirectionOnStartOperation = 0xB14; //_InteractionRayDirectionOnStartOperation_k__BackingField // [UPDATED json]
+            public static uint IsYourPlayer = 0xB71; //_IsYourPlayer_k__BackingField // [UPDATED json]
+            public static uint VoipID = 0x9A0; //_VoipID_k__BackingField // [UPDATED json]
+            public static uint Id = 0x9A8;  //_PlayerId_k__BackingField // [UPDATED json]
+            public static uint GameWorld = 0x680; //_GameWorld_k__BackingField // [UPDATED json]
         }
         //public static class ObservedPlayerView
         public readonly partial struct ObservedPlayerView
         {
-            public static uint ObservedPlayerController = 0x28; //_ObservedPlayerController_k__BackingField
-            public static uint Voice = 0x40; //_Voice_k__BackingField
-            public static uint VisibleToCameraType = 0x60; //_VisibleToCameraType_k__BackingField
-            public static uint GroupID = 0x80; //_GroupId_k__BackingField
-            public static uint Side = 0x94; //_Side_k__BackingField
-            public static uint IsAI = 0xA0; //_IsAI_k__BackingField
-            public static uint NickName = 0xB8; //_NickName_k__BackingField
-            public static uint AccountId = 0xC0; //_AccountId_k__BackingField
-            public static uint PlayerBody = 0xD8; //_PlayerBody_k__BackingField
-            public static uint Id = 0x7C; //_Id_k__BackingField
-            public static uint VoipId = 0xB0; //_VoipID_k__BackingField
+            public static uint ObservedPlayerController = 0x28; //_ObservedPlayerController_k__BackingField // [UPDATED json]
+            public static uint Voice = 0x40; //_Voice_k__BackingField // [UPDATED json]
+            public static uint VisibleToCameraType = 0x60; //_VisibleToCameraType_k__BackingField // [UPDATED json]
+            public static uint GroupID = 0x80; //_GroupId_k__BackingField // [UPDATED json]
+            public static uint Side = 0x94; //_Side_k__BackingField // [UPDATED json]
+            public static uint IsAI = 0xA0; //_IsAI_k__BackingField // [UPDATED json]
+            public static uint NickName = 0xB8; //_NickName_k__BackingField // [UPDATED json]
+            public static uint AccountId = 0xC0; //_AccountId_k__BackingField // [UPDATED json]
+            public static uint PlayerBody = 0xD8; //_PlayerBody_k__BackingField // [UPDATED json]
+            public static uint Id = 0x7C; //_Id_k__BackingField // [UPDATED json]
+            public static uint VoipId = 0xB0; //_VoipID_k__BackingField // [UPDATED json]
         }
         //public static class ObservedPlayerController
         public readonly partial struct ObservedPlayerController
@@ -272,8 +284,8 @@ namespace SDK
         //public static class ObservedPlayerStateContext
         public readonly partial struct ObservedMovementController
         {
-            public static uint Rotation = 0x20; //_Rotation_k__BackingField
-            public static uint Velocity = 0xF0; //_velocity
+            public static uint Rotation = 0x20; //_Rotation_k__BackingField // [UPDATED json]
+            public static uint Velocity = 0xF8; //_velocity // [UPDATED json]
         }
         //public static class ObservedPlayerHandsController
         public readonly partial struct ObservedHandsController
@@ -377,15 +389,15 @@ namespace SDK
         //public static class Profile
         public readonly partial struct Profile
         {
-            public static uint Id = 0x10;
-            public static uint AccountId = 0x18;
-            public static uint Info = 0x48;
-            public static uint Inventory = 0x70;
-            public static uint Skills = 0x80;
-            public static uint TaskConditionCounters = 0x90;
-            public static uint QuestsData = 0x98;
-            public static uint WishlistManager = 0x108;
-            public static uint Stats = 0x148;
+            public static uint Id = 0x10; // [UPDATED json]
+            public static uint AccountId = 0x18; // [UPDATED json]
+            public static uint Info = 0x48; // [UPDATED json]
+            public static uint Inventory = 0x70; // [UPDATED json]
+            public static uint Skills = 0x80; // [UPDATED json]
+            public static uint TaskConditionCounters = 0x90; // [UPDATED json]
+            public static uint QuestsData = 0x98; // [UPDATED json]
+            public static uint WishlistManager = 0x108; // [UPDATED json]
+            public static uint Stats = 0x148; // [UPDATED json]
         }
         //public static class WishlistManager
         public readonly partial struct WishlistManager
@@ -395,24 +407,24 @@ namespace SDK
         //public static class ProfileInfo
         public readonly partial struct PlayerInfo
         {
-            public static uint Nickname = 0x10;
-            public static uint EntryPoint = 0x28;
-            public static uint Side = 0x48; //_Side_k__BackingField
-            public static uint RegistrationDate = 0x4C;
-            public static uint GroupId = 0x50;
-            public static uint Settings = 0x78; //_Settings_k__BackingField
-            public static uint MemberCategory = 0x80;
-            public static uint Experience = 0x84; //_experience
+            public static uint Nickname = 0x10; // [UPDATED json]
+            public static uint EntryPoint = 0x28; // [UPDATED json]
+            public static uint Side = 0x48; //_Side_k__BackingField // [UPDATED json]
+            public static uint RegistrationDate = 0x4C; // [UPDATED json]
+            public static uint GroupId = 0x50; // [UPDATED json]
+            public static uint Settings = 0x78; //_Settings_k__BackingField // [UPDATED json]
+            public static uint MemberCategory = 0x80; // [UPDATED json]
+            public static uint Experience = 0x84; //_experience // [UPDATED json]
         }
         //public static class SkillManager
         public readonly partial struct SkillManager
         {
-            public static uint StrengthBuffJumpHeightInc = 0x60;
-            public static uint StrengthBuffThrowDistanceInc = 0x70;
-            public static uint MagDrillsLoadSpeed = 0x180;
-            public static uint MagDrillsUnloadSpeed = 0x188;
-            public static uint RaidLoadedAmmoAction = 0x480;
-            public static uint RaidUnloadedAmmoAction = 0x488;
+            public static uint StrengthBuffJumpHeightInc = 0x60; // [UPDATED json]
+            public static uint StrengthBuffThrowDistanceInc = 0x70; // [UPDATED json]
+            public static uint MagDrillsLoadSpeed = 0x180; // [UPDATED json]
+            public static uint MagDrillsUnloadSpeed = 0x188; // [UPDATED json]
+            public static uint RaidLoadedAmmoAction = 0x480; // [UPDATED json]
+            public static uint RaidUnloadedAmmoAction = 0x488; // [UPDATED json]
         }
         //public static class FloatBuff
         public readonly partial struct SkillValueContainer
@@ -465,23 +477,23 @@ namespace SDK
         //public static class MovementContext
         public readonly partial struct MovementContext
         {
-            public static uint Player = 0x48; //_player
-            public static uint _rotation = 0xC8;
-            public static uint PlantState = 0x78;
-            public static uint CurrentState = 0x1F0; //_CurrentState_k__BackingField
-            public static uint _states = 0x480;
-            public static uint _movementStates = 0x4B0;
-            public static uint _tilt = 0xB4;
-            public static uint _physicalCondition = 0x198;
-            public static uint _speedLimitIsDirty = 0x1B9;
-            public static uint StateSpeedLimit = 0x1BC; //_StateSpeedLimit_k__BackingField
-            public static uint StateSprintSpeedLimit = 0x1C0; //_StateSprintSpeedLimit_k__BackingField
-            public static uint _lookDirection = 0x3B8;
-            public static uint WalkInertia = 0x4bC; //_WalkInertia_k__BackingField
-            public static uint SprintBrakeInertia = 0x4C0; //_SprintBrakeInertia_k__BackingField
-            public static uint _poseInertia = 0x4C4;
-            public static uint _currentPoseInertia = 0x4C8;
-            public static uint _inertiaAppliedTime = 0x26C;
+            public static uint Player = 0x40; //_player // [UPDATED json]
+            public static uint _rotation = 0xC0; // [UPDATED json]
+            public static uint PlantState = 0x70; // [UPDATED json]
+            public static uint CurrentState = 0x1E8; //_CurrentState_k__BackingField // [UPDATED json]
+            public static uint _states = 0x488; // [UPDATED json]
+            public static uint _movementStates = 0x4B8; // [UPDATED json]
+            public static uint _tilt = 0xAC; // [UPDATED json]
+            public static uint _physicalCondition = 0x190; // [UPDATED json]
+            public static uint _speedLimitIsDirty = 0x1B1; // [UPDATED json]
+            public static uint StateSpeedLimit = 0x1B4; //_StateSpeedLimit_k__BackingField // [UPDATED json]
+            public static uint StateSprintSpeedLimit = 0x1B8; //_StateSprintSpeedLimit_k__BackingField // [UPDATED json]
+            public static uint _lookDirection = 0x3C0; // [UPDATED json]
+            public static uint WalkInertia = 0x4C4; //_WalkInertia_k__BackingField // [UPDATED json]
+            public static uint SprintBrakeInertia = 0x4C8; //_SprintBrakeInertia_k__BackingField // [UPDATED json]
+            public static uint _poseInertia = 0x500; // [UPDATED json]
+            public static uint _currentPoseInertia = 0x504; // [UPDATED json]
+            public static uint _inertiaAppliedTime = 0x264; // [UPDATED json]
         }
         //public static class MovementState + public static class BaseMovementState + public static class MovePlayerState
         public readonly partial struct MovementState
@@ -497,7 +509,7 @@ namespace SDK
         //public static class InventoryController
         public readonly partial struct InventoryController
         {
-            public static uint Inventory = 0x100; //_Inventory_k__BackingField
+            public static uint Inventory = 0x100; //_Inventory_k__BackingField // [UPDATED json]
         }
         //public static class Inventory
         public readonly partial struct Inventory
@@ -637,20 +649,20 @@ namespace SDK
         //public static class EFTHardSettings
         public readonly partial struct EFTHardSettings
         {
-            public static uint POSE_CHANGING_SPEED = 0x380;
+            public static uint POSE_CHANGING_SPEED = 0x388;
             public static uint _instance = 0x0;
             public static uint MED_EFFECT_USING_PANEL = 0x3B4;
             public static uint MOUSE_LOOK_HORIZONTAL_LIMIT = 0x340;
             public static uint MOUSE_LOOK_LIMIT_IN_AIMING_COEF = 0x350;
             public static uint MOUSE_LOOK_VERTICAL_LIMIT = 0x348;
-            public static uint ABOVE_OR_BELOW = 0x204;
-            public static uint ABOVE_OR_BELOW_STAIRS = 0x20C;
-            public static uint AIM_PROCEDURAL_INTENSITY = 0x3FC;
+            public static uint ABOVE_OR_BELOW = 0x20C;
+            public static uint ABOVE_OR_BELOW_STAIRS = 0x214;
+            public static uint AIM_PROCEDURAL_INTENSITY = 0x404;
             public static uint AIR_CONTROL_BACK_DIR = 0x15C;
             public static uint AIR_CONTROL_NONE_OR_ORT_DIR = 0x160;
             public static uint AIR_CONTROL_SAME_DIR = 0x158;
-            public static uint AIR_LERP = 0x3AC;
-            public static uint AIR_MIN_SPEED = 0x3A8;
+            public static uint AIR_LERP = 0x3B4;
+            public static uint AIR_MIN_SPEED = 0x3B0;
             public static uint DecelerationSpeed = 0x50;
             public static uint WEAPON_OCCLUSION_LAYERS = 0x238;
             public static uint DOOR_RAYCAST_DISTANCE = 0x18C;
@@ -830,13 +842,13 @@ namespace SDK
         //
         public readonly partial struct Special
         {
-            public static ulong TypeInfoTableRva = 0x5AA9118;
-            public static uint EFTHardSettings_TypeIndex = 225;
-            public static uint GPUInstancerManager_TypeIndex = 4917;
-            public static uint WeatherController_TypeIndex = 10104;
-            public static uint GlobalConfiguration_TypeIndex = 6406;
-            public static uint MatchingProgress_TypeIndex = 15331;
-            public static uint MatchingProgressView_TypeIndex = 15334;
+            public static ulong TypeInfoTableRva = 0x5CD1848; // [UPDATED il2cpp_offsets.json]
+            public static uint EFTHardSettings_TypeIndex = 229; // [UPDATED]
+            public static uint GPUInstancerManager_TypeIndex = 5072; // [UPDATED]
+            public static uint WeatherController_TypeIndex = 10359; // [UPDATED]
+            public static uint GlobalConfiguration_TypeIndex = 6588; // [UPDATED]
+            public static uint MatchingProgress_TypeIndex = 15761; // [UPDATED]
+            public static uint MatchingProgressView_TypeIndex = 15764; // [UPDATED]
         }
         // MatchingProgress — pure data model, instance fields
         public readonly partial struct MatchingProgress
@@ -1095,25 +1107,25 @@ namespace SDK
     {
         public static string ToDisplayString(this Enums.EMatchingStage stage) => stage switch
         {
-            Enums.EMatchingStage.GameWorldCreating => "Creating Game World",
-            Enums.EMatchingStage.BundlesLoading => "Loading Bundles",
-            Enums.EMatchingStage.PoolsCreating => "Creating Pools",
-            Enums.EMatchingStage.MapLoading => "Loading Map",
-            Enums.EMatchingStage.DataCaching => "Caching Data",
-            Enums.EMatchingStage.PlayersSearching => "Searching for Players",
-            Enums.EMatchingStage.ServerSearching => "Searching for Server",
-            Enums.EMatchingStage.ServerStartAwaiting => "Awaiting Server Start",
-            Enums.EMatchingStage.GamePreparing => "Preparing Game",
-            Enums.EMatchingStage.ServerConnecting => "Connecting to Server",
-            Enums.EMatchingStage.ServerResponseAwaiting => "Awaiting Server Response",
-            Enums.EMatchingStage.LootBundlesLoading => "Loading Loot Bundles",
-            Enums.EMatchingStage.LootPoolsCreating => "Creating Loot Pools",
-            Enums.EMatchingStage.SessionStartAwaiting => "Awaiting Session Start",
-            Enums.EMatchingStage.LocalGameStarting => "Starting Game",
-            Enums.EMatchingStage.PlayersAwaiting => "Awaiting Players",
-            Enums.EMatchingStage.SynchronizationWithOtherPlayers => "Synchronizing Players",
-            Enums.EMatchingStage.GameLeaving => "Leaving Game",
-            _ => "Waiting for Raid Start",
+            Enums.EMatchingStage.GameWorldCreating => "创建游戏世界",
+            Enums.EMatchingStage.BundlesLoading => "加载资源包",
+            Enums.EMatchingStage.PoolsCreating => "创建资源池",
+            Enums.EMatchingStage.MapLoading => "加载地图",
+            Enums.EMatchingStage.DataCaching => "缓存数据",
+            Enums.EMatchingStage.PlayersSearching => "搜索玩家",
+            Enums.EMatchingStage.ServerSearching => "搜索服务器",
+            Enums.EMatchingStage.ServerStartAwaiting => "等待服务器启动",
+            Enums.EMatchingStage.GamePreparing => "准备游戏",
+            Enums.EMatchingStage.ServerConnecting => "连接服务器",
+            Enums.EMatchingStage.ServerResponseAwaiting => "等待服务器响应",
+            Enums.EMatchingStage.LootBundlesLoading => "加载战利品资源包",
+            Enums.EMatchingStage.LootPoolsCreating => "创建战利品池",
+            Enums.EMatchingStage.SessionStartAwaiting => "等待会话启动",
+            Enums.EMatchingStage.LocalGameStarting => "启动游戏",
+            Enums.EMatchingStage.PlayersAwaiting => "等待玩家",
+            Enums.EMatchingStage.SynchronizationWithOtherPlayers => "同步其他玩家",
+            Enums.EMatchingStage.GameLeaving => "离开游戏",
+            _ => "等待游戏开始",
         };
     }
 }

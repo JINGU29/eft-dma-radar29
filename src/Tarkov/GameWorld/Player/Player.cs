@@ -2468,12 +2468,12 @@ namespace eft_dma_radar.Tarkov.EFTPlayer
             /// <summary>
             /// Default value if a type cannot be established.
             /// </summary>
-            [Description("Default")]
+            [Description("默认")]
             Default,
             /// <summary>
             /// Teammate of LocalPlayer.
             /// </summary>
-            [Description("Teammate")]
+            [Description("队友")]
             Teammate,
             /// <summary>
             /// Hostile/Enemy USEC.
@@ -2493,7 +2493,7 @@ namespace eft_dma_radar.Tarkov.EFTPlayer
             /// <summary>
             /// Difficult AI Raider.
             /// </summary>
-            [Description("Raider")]
+            [Description("突袭者")]
             AIRaider,
             /// <summary>
             /// Difficult AI Boss.
@@ -2503,17 +2503,17 @@ namespace eft_dma_radar.Tarkov.EFTPlayer
             /// <summary>
             /// Player controlled Scav.
             /// </summary>
-            [Description("Player Scav")]
+            [Description("玩家 Scav")]
             PScav,
             /// <summary>
             /// 'Special' Human Controlled Hostile PMC/Scav (on the watchlist, or a special account type).
             /// </summary>
-            [Description("Special Player")]
+            [Description("特殊玩家")]
             SpecialPlayer,
             /// <summary>
             /// Human Controlled Hostile PMC/Scav that has a Twitch account name as their IGN.
             /// </summary>
-            [Description("Streamer")]
+            [Description("主播")]
             Streamer
         }
 

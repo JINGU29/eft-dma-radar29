@@ -44,7 +44,7 @@ namespace eft_dma_radar.Tarkov.EFTPlayer
         {
             _btrView = btrView;
 
-            // Hard force — never allow reassignment
+            // Hard force ï¿½ never allow reassignment
             UpdatePlayerType(PlayerType.AIRaider);
         }
 
@@ -218,8 +218,8 @@ namespace eft_dma_radar.Tarkov.EFTPlayer
             }
             else
             {
-                canvas.DrawText("¦", point, SKTextAlign.Left, SKPaints.RadarFontRegular12, SKPaints.TextOutline);
-                canvas.DrawText("¦", point, SKTextAlign.Left, SKPaints.RadarFontRegular12, paints.Item2);
+                canvas.DrawText("i", point, SKTextAlign.Left, SKPaints.RadarFontRegular12, SKPaints.TextOutline);
+                canvas.DrawText("i", point, SKTextAlign.Left, SKPaints.RadarFontRegular12, paints.Item2);
                 distanceYOffset = 12f * MainWindow.UIScale;
                 nameYOffset = 0f;
             }
